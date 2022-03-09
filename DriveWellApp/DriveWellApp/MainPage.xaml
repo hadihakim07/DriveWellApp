@@ -38,7 +38,7 @@
         <Entry Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. 24512.59"></Entry>
 
         <Label Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Is Used</Label>
-        <Entry Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="Alphanumeric String - Length 17"></Entry>
+        <CheckBox Grid.Row="5" Grid.Column="1" IsChecked="False" HorizontalOptions="Center" ></CheckBox>
 
         <Label Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Model Year</Label>
         <Picker Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" ></Picker>
