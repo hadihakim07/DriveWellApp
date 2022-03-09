@@ -3,22 +3,53 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DriveWellApp.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1.3*"></ColumnDefinition>
+            <ColumnDefinition Width="1.5*"></ColumnDefinition>
+            <ColumnDefinition Width="1.4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.ColumnSpan="4" Text="DriveWell Inc." FontSize="40" FontFamily="Arial" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+
+
+        <Label Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >VIN Number</Label>
+        <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="Alphanumeric String - Length 17"></Entry>
+
+        <Label Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Car Make</Label>
+        <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. Mercedes, BMW"></Entry>
+
+        <Label Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Car Type</Label>
+        <Entry Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="Alphanumeric String - Length 17"></Entry>
+
+        <Label Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Purchase Price</Label>
+        <Entry Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. 24512.59"></Entry>
+
+        <Label Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Is Used</Label>
+        <Entry Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="Alphanumeric String - Length 17"></Entry>
+
+        <Label Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Model Year</Label>
+        <Picker Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" ></Picker>
+
+        <Label Grid.Row="7" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Mileage (Km)</Label>
+        <Entry Grid.Row="7" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. 22000"></Entry>
+
+
+
+
+
+    </Grid>
 
 </ContentPage>
