@@ -22,7 +22,7 @@
             <ColumnDefinition Width="1.4*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Label Grid.ColumnSpan="4" Text="DriveWell Inc." FontSize="40" FontFamily="Arial" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+        <Label Grid.ColumnSpan="4" Text="DriveWell Inc." FontSize="40" FontFamily="Arial" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black"></Label>
 
 
         <Label Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >VIN Number</Label>
@@ -32,7 +32,15 @@
         <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. Mercedes, BMW"></Entry>
 
         <Label Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Car Type</Label>
-        <Entry Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="Alphanumeric String - Length 17"></Entry>
+        <Picker Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Title="Sedan">
+            <Picker.Items>
+                <x:String>Sedan</x:String>
+                <x:String>Coupe</x:String>
+                <x:String>Hatchback</x:String>
+                <x:String>Van</x:String>
+                <x:String>Truck</x:String>
+            </Picker.Items>
+        </Picker>
 
         <Label Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Purchase Price</Label>
         <Entry Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. 24512.59"></Entry>
@@ -41,13 +49,37 @@
         <CheckBox Grid.Row="5" Grid.Column="1" IsChecked="False" HorizontalOptions="Center" ></CheckBox>
 
         <Label Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Model Year</Label>
-        <Picker Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" ></Picker>
+        <Picker Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Title="2021">
+            <Picker.Items>
+                <x:String>2022</x:String>
+                <x:String>2021</x:String>
+                <x:String>2020</x:String>
+                <x:String>2019</x:String>
+                <x:String>2018</x:String>
+                <x:String>2017</x:String>
+                <x:String>2016</x:String>
+                <x:String>2015</x:String>
+                <x:String>2014</x:String>
+                <x:String>2013</x:String>
+                <x:String>2012</x:String>
+                <x:String>2011</x:String>
+                <x:String>2010</x:String>
+            </Picker.Items>
+        </Picker>
 
         <Label Grid.Row="7" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Mileage (Km)</Label>
-        <Entry Grid.Row="7" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. 22000"></Entry>
+        <Entry Grid.Row="7" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. 22000" IsEnabled="False"></Entry>
 
+        <StackLayout Orientation="Horizontal" Grid.Row="8" Grid.Column="1" Spacing="75">
+            <Button Text="Add Car" HorizontalOptions="Center" VerticalOptions="Center"></Button>
+            <Button Text="Clear" HorizontalOptions="Start" VerticalOptions="Center"></Button>
+            <Button Text="Update"  HorizontalOptions="End" VerticalOptions="Center"></Button>
+        </StackLayout>
+ 
+        <ContentView Grid.Row="1" Grid.Column="2" Grid.RowSpan="7" ></ContentView>
 
-
+        <Image Grid.Row="1" Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+        
 
 
     </Grid>
