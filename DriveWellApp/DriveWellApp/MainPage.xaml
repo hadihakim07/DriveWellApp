@@ -37,7 +37,6 @@
                 <x:String>Sedan</x:String>
                 <x:String>Coupe</x:String>
                 <x:String>Hatchback</x:String>
-                <x:String>Van</x:String>
                 <x:String>Truck</x:String>
             </Picker.Items>
         </Picker>
@@ -62,8 +61,6 @@
                 <x:String>2014</x:String>
                 <x:String>2013</x:String>
                 <x:String>2012</x:String>
-                <x:String>2011</x:String>
-                <x:String>2010</x:String>
             </Picker.Items>
         </Picker>
 
@@ -80,8 +77,12 @@
 
         <Image Grid.Row="1" Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center"></Image>
         
-        
 
+        
+        
+        
+        
+        
 
     </Grid>
 
