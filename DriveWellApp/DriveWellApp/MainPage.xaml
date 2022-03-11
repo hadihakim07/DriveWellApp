@@ -48,7 +48,7 @@
         <CheckBox x:Name="IsUsed" Grid.Row="5" Grid.Column="1" IsChecked="False" HorizontalOptions="Center" ></CheckBox>
 
         <Label Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Model Year</Label>
-        <Picker x:Name="ModelYear" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Title="2021">
+        <Picker Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Title="2021">
             <Picker.Items>
                 <x:String>2022</x:String>
                 <x:String>2021</x:String>
