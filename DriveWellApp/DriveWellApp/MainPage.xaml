@@ -26,13 +26,13 @@
 
 
         <Label Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >VIN Number</Label>
-        <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="Alphanumeric String - Length 17"></Entry>
+        <Entry x:Name="VinLabel" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="Alphanumeric String - Length 17"></Entry>
 
         <Label Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Car Make</Label>
-        <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. Mercedes, BMW"></Entry>
+        <Entry x:Name="CarMakes" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. Mercedes, BMW"></Entry>
 
         <Label Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Car Type</Label>
-        <Picker Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Title="Sedan">
+        <Picker x:Name="CarTypes" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Title="Sedan">
             <Picker.Items>
                 <x:String>Sedan</x:String>
                 <x:String>Coupe</x:String>
@@ -42,13 +42,13 @@
         </Picker>
 
         <Label Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Purchase Price</Label>
-        <Entry Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. 24512.59"></Entry>
+        <Entry x:Name="PurchasePrice" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. 24512.59"></Entry>
 
         <Label Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Is Used</Label>
-        <CheckBox Grid.Row="5" Grid.Column="1" IsChecked="False" HorizontalOptions="Center" ></CheckBox>
+        <CheckBox x:Name="IsUsed" Grid.Row="5" Grid.Column="1" IsChecked="False" HorizontalOptions="Center" ></CheckBox>
 
         <Label Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Model Year</Label>
-        <Picker Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Title="2021">
+        <Picker x:Name="ModelYear" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Title="2021">
             <Picker.Items>
                 <x:String>2022</x:String>
                 <x:String>2021</x:String>
@@ -65,17 +65,17 @@
         </Picker>
 
         <Label Grid.Row="7" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="Black" >Mileage (Km)</Label>
-        <Entry Grid.Row="7" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. 22000" IsEnabled="False"></Entry>
+        <Entry x:Name="Mileage" Grid.Row="7" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Placeholder="e.g. 22000" IsEnabled="False"></Entry>
 
         <StackLayout Orientation="Horizontal" Grid.Row="8" Grid.Column="1" Spacing="75">
-            <Button Text="Add Car" HorizontalOptions="Center" VerticalOptions="Center"></Button>
-            <Button Text="Clear" HorizontalOptions="Start" VerticalOptions="Center"></Button>
-            <Button Text="Update"  HorizontalOptions="End" VerticalOptions="Center"></Button>
+            <Button x:Name="Add_Btn" Text="Add Car" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Add_Btn_Clicked"></Button>
+            <Button x:Name="Clear_Btn" Text="Clear" HorizontalOptions="Start" VerticalOptions="Center" Clicked="Clear_Btn_Clicked"></Button>
+            <Button x:Name="Update_Btn" Text="Update"  HorizontalOptions="End" VerticalOptions="Center" Clicked="Update_Btn_Clicked"></Button>
         </StackLayout>
  
         <Label x:Name="carRepos" Grid.Row="1" Grid.Column="2" Grid.RowSpan="7" ></Label>
 
-        <Image Grid.Row="1" Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+        <Image x:Name="CarImage" Grid.Row="1" Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center"></Image>
         
 
         

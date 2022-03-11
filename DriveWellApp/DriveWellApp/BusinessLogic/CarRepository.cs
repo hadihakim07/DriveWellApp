@@ -13,10 +13,12 @@ namespace DriveWellApp.BusinessLogic
         public ObservableCollection<Car> Car => _car;
 
 
-        public CarRepository(string vinNumber, string carMake, CarType carType)
+        public CarRepository()
         {
                
         }
+
+
 
         public void Add(Car newCar)
         {
