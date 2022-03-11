@@ -36,13 +36,12 @@ namespace DriveWellApp.BusinessLogic
 
                 else
                     throw new Exception("The Vehicle being searched does not exist in the records");
-
+                    return null;
         }
 
-        public readonly Cars(Car newCar)
+        public Car Cars(Car newCar)
         {
-            foreach (Car Car in _car)
-                return Car;
+            return newCar;
         }
     }
 }
